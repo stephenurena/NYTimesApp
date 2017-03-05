@@ -32,7 +32,7 @@ function nyApiQuery(numLimit, searchTerm, startYear, endYear) {
 				    for (var i = 0; i < numLimit; i++){
 				    	convertedDate = moment(new Date(response.docs[i].pub_date));
 				    	var wordCount = response.docs[i].word_count;
-				    	var wpmRead = Math.ceil( (wordCount/avgWpm) * 10);
+				    	var wpmRead = Math.ceil( (wordCount/avgWpm));
 				    	numArticle++;
 				    	var articles = $("<div class='panel-body border displayArts'>")
 				    		.append( $("<i class='label label-primary divNum'>").text(numArticle) )
