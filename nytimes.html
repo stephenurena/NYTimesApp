@@ -23,16 +23,20 @@
 		<div class="col-sm-12">
 			<div class="panel-heading header">Search Parameters</div>
 			<div class="panel-body border">
-				Search Term
-					<br><input type="text" id="searchTerm"><br>
-				Number of records
-					<br><input type="text" id="limit"><br>
-				Start Year (Optional)
-					<br><input type="text" id="startYear"><br>
-				End Year (Optional)
-					<br><input type="text" id="endYear"><br>
-				<button id="search">Search</button>
-				<button id="clear">Clear Results</button>
+				<label for="querySearch">Search Term</label>
+					<input type="text" class="form-control" id="searchTerm"><br>
+				<label for="numRecords">Number of records</label>
+					<select class="form-control" id="limit">
+					  <option value="1">1</option>
+					  <option value="5">5</option>
+					  <option value="10" selected="selected">10</option>
+					</select><br>
+				<label for="StartYear">Start Year (Optional)</label>
+					<input type="text" class="form-control" id="startYear"><br>
+				<label for="EndYear">End Year (Optional)</label>
+					<input type="text" class="form-control" id="endYear"><br>
+				<button class="btn btn-primary" id="search">Search</button>
+				<button class="btn btn-primary" id="clear">Clear Results</button>
 			</div>
 		</div>
 	</div>
@@ -48,7 +52,9 @@
 
 </div>
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.js"></script>
 	<script type="text/javascript" src="nytApp.js"></script>
+
 	
 </body>
 </html>

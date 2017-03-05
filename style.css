@@ -15,3 +15,10 @@ input, button {
 	margin: 5px;
 	background: #e8eaee;
 }
+.divNum, .wpm {
+	display: inline;
+	margin: 5px;
+}
+.wpm {
+	color: rgba(0,0,0,.44);
+}
